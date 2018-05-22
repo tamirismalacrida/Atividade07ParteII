@@ -48,7 +48,7 @@ public class Atividade07 {
     
     public double maiorValor(double vVetor[]){
     int i=0;     
-    double maiorValor = vVetor[0];
+    double maiorValor = vVetor[vVetor.length - 1];
     
     for (i=0; i<vVetor.length; i++) {
       
