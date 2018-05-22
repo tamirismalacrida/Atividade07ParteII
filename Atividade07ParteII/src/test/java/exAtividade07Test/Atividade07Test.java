@@ -24,10 +24,9 @@ public class Atividade07Test {
     
         Atividade07 atv = new Atividade07();
         
-        double vVetor[] = new double[] {1,2,3,4,5};       
-        double menorValor =atv.menorValor(vVetor);
+        double vVetor[] = new double[] {1,2,3,4,5};     
         
-        assertEquals(5, menorValor, 1);
+        assertEquals(1, atv.menorValor(vVetor), 1);
     } 
     
     @Test
@@ -36,9 +35,7 @@ public class Atividade07Test {
         Atividade07 atv = new Atividade07();
         
         double vVetor[] = new double[] {1,2,3,4,5};       
-        double maiorValor =atv.menorValor(vVetor);
-        
-        assertEquals(3, maiorValor, 1);
+        assertEquals(5, atv.maiorValor(vVetor), 1);
     } 
     
      @Test
@@ -48,9 +45,7 @@ public class Atividade07Test {
         
         double vVetor[] = new double[] {1,2,3,4,5};  
         
-        double TotalAcimaMedia = atv.valoresAcimaMedia(vVetor);
-        
-        assertEquals(0, TotalAcimaMedia, 1);        
+        assertEquals(2, atv.valoresAcimaMedia(vVetor), 1);        
      }
      
      @Test
@@ -58,11 +53,9 @@ public class Atividade07Test {
      
          Atividade07 atv = new Atividade07();
         
-        double vVetor[] = new double[] {1,2,3,4,5};  
+        double vVetor[] = new double[] {1,2,3,4,5};
         
-        double TotalAbaixoMedia = atv.valoresAbaixoMedia(vVetor);
-        
-        assertEquals(5, TotalAbaixoMedia, 1);
+        assertEquals(2, atv.valoresAbaixoMedia(vVetor), 1);
         
      }
      
@@ -74,9 +67,7 @@ public class Atividade07Test {
         
         double vVetor[] = new double[] {1,2,3,4,5};  
         
-        double desvioPadrao = atv.valoresAbaixoMedia(vVetor);
-        
-        assertEquals(4, desvioPadrao, 1);
+        assertEquals(1.89, atv.valoresAbaixoMedia(vVetor), 1);
         
      }
     
